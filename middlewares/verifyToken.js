@@ -13,7 +13,7 @@ const verifyToken = (req, res, next) => {
         jwt.verify(token, process.env.JWT_SECRET_CODE, (err, data)=>{
             if(err){
                 return res.status(403).json({
-                    message: "wrong token"
+                    message: "wron token"
                 })
             } 
 
